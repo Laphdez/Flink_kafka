@@ -28,7 +28,7 @@ public class Kafka {
 			}	
 		}).keyBy(words -> words.f0)
 		  .sum(1)
-		  .writeAsText("/home/flink/Documentos/kafka.txt");
+		  .writeAsText("/home/spark/Documentos/kafka.txt");
 		
 		env.execute("Ejemplo Kafka");
     }
